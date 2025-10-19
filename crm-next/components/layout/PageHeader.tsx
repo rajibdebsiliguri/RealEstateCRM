@@ -1,0 +1,10 @@
+export function PageHeader({ title, subtitle }: { title: string; subtitle?: string }) {
+  return (
+    <div className="flex items-end justify-between">
+      <div>
+        <h1 className="text-xl font-semibold">{title}</h1>
+        {subtitle ? <p className="text-sm text-gray-600">{subtitle}</p> : null}
+      </div>
+    </div>
+  );
+}
